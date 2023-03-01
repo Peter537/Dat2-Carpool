@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Titel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="plugins/JQuery-3.6.3.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="text-center">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="topbanner.jpg" alt="Topbanner">
+            </div>
+        </div>
+        <div class="row" style="background-color: #d9d9d9">
+            <div class="col-md-3">
+                <h1>Velkommen til carpool</h1>
+            </div>
+            <div class="col-md-3">
+                <p>Find nogen at køre sammen med</p>
+            </div>
+        </div>
+    </div>
+    <form action="resultatside.html" method="post">
+        <label>Vælg dato:
+            <input type="date" name="date" value="2023-03-01">
+        </label>
+        <br><br>
+        <label>
+            <input type="radio" name="ridertype" value="chauffør">
+        </label>Chauffør<br>
+        <label>
+            <input type="radio" name="ridertype" value="passager" checked>
+        </label>Passager<br>
+        <br>
+        <label>Fra:
+            <select>
+                <option value="Rønne">Rønne</option>
+                <option value="Åkirkeby">Åkirkeby</option>
+                <option value="Gudhjem">Gudhjem</option>
+                <option value="Nexø">Nexø</option>
+            </select>
+        </label>
+        <label>Til:
+            <select>
+                <option value="Rønne">Rønne</option>
+                <option value="Åkirkeby">Åkirkeby</option>
+                <option value="Gudhjem">Gudhjem</option>
+                <option value="Nexø">Nexø</option>
+            </select>
+        </label>
+        <br><br>
+        <button type="submit">Find kørelejlighed</button>
+    </form>
+</div>
+</body>
+</html>
